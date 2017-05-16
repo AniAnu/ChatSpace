@@ -1,4 +1,5 @@
 {
     "host": "http://localhost:3000",
-    "dbURI": "mongodb://anmol-shah:abcd@ds143081.mlab.com:43081/mychatspacedb"
+    "dbURI": "mongodb://anmol-shah:abcd@ds143081.mlab.com:43081/mychatspacedb",
+    "sessionSecret": "chatcantalk"
 }

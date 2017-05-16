@@ -12,5 +12,6 @@
 
 module.exports = {
 //    router: router
-    router: require('./routes')()
+    router: require('./routes')(),
+    session: require('./session')
 }
