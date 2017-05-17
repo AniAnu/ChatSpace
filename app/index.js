@@ -9,7 +9,8 @@
 //    res.render('login');
 //});
 
-
+// Social Authentication Logic
+require('./auth')();
 module.exports = {
 //    router: router
     router: require('./routes')(),
