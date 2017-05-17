@@ -34,7 +34,7 @@ module.exports = () => {
                          .then(newChatUser => done(null, newChatUser))
                          .catch(error => console.log('Error when creating a new user'))
                  }
-        })
+        });
     }
     passport.use(new FacebookStrategy(config.fb, authProcessor));
 }
