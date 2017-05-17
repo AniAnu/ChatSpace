@@ -15,7 +15,7 @@ app.use(passport.session());
 app.use('/', chatspace.router);
 
 
-app.listen(app.get('port'), () => {
+chatspace.ioServer(app).listen(app.get('port'), () => {
     console.log('ChatSpace is running on port:', app.get('port'));
     
 })

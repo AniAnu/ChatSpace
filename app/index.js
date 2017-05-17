@@ -11,8 +11,18 @@
 
 // Social Authentication Logic
 require('./auth')();
+
+// Creating an IO server instance
+let ioServer = app => {
+    const server = require('http').Server(app);
+    const io = require('socket.io')(server);
+    require('./socket')(io);
+    return server;
+}
+
 module.exports = {
 //    router: router
     router: require('./routes')(),
-    session: require('./session')
+    session: require('./session'),
+    ioServer
 }
