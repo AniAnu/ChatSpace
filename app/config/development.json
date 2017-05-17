@@ -7,8 +7,13 @@
         "clientSecret": "Your Facebook Client Secret",
         "callbackURL": "//localhost:3000/auth/facebook/callback",
         "profileFields": ["id", "displayName", "photos"]
+    },
+    "twitter": {
+        "consumerKey": "Your Twitter Consumer Key",
+        "consumerSecret": "Your Twitter Consumer Secret",
+        "callbackURL": "//localhost:3000/auth/twitter/callback",
+        "profileFields": ["id", "displayName", "photos"]
     }
 }
 
 
-hry
