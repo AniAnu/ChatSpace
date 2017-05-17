@@ -1,5 +1,11 @@
 {
     "host": "http://localhost:3000",
     "dbURI": "mongodb://anmol-shah:abcd@ds143081.mlab.com:43081/mychatspacedb",
-    "sessionSecret": "chatcantalk"
+    "sessionSecret": "chatcantalk",
+    "db": {
+        "clientID": "1962594744026828",
+        "clientSecret": "8a2918c5dbce38f54c511471f942e7d2",
+        "callbackURL": "//localhost:3000/auth/facebook/callback",
+        "profileFields": ["id", "displayName", "photos"]
+    }
 }
