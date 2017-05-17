@@ -37,4 +37,5 @@ module.exports = () => {
         });
     }
     passport.use(new FacebookStrategy(config.fb, authProcessor));
+    
 }
