@@ -44,5 +44,6 @@ module.exports = {
     //    router: router
     router: require('./routes')(),
     session: require('./session'),
-    ioServer
+    ioServer,
+    logger: require('./logger')
 }

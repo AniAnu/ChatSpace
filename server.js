@@ -12,6 +12,14 @@ app.set('view engine', 'ejs');
 app.use(chatspace.session);
 app.use(passport.initialize());
 app.use(passport.session());
+app.use(require('morgan')('combined', {
+	stream: {
+		write: message => {
+			// Write to logs
+			chatspace.logger.log('info', message);
+		}
+	}
+}));
 app.use('/', chatspace.router);
 
 
