@@ -2,6 +2,7 @@
 const passport = require('passport');
 const config = require('../config');
 const h = require('../helpers');
+const logger = require('../logger');
 const FacebookStrategy = require('passport-facebook').Strategy;
 const TwitterStrategy = require('passport-twitter').Strategy;
 
@@ -17,7 +18,7 @@ module.exports = () => {
         
         h.findById(id)
             .then(user => done(null, user))
-            .catch(error => console.log('Error when derserializing the user'));
+            .catch(error => logger.log('error', 'Error when deserializing the user: ' + error));
     });
     
     
@@ -33,7 +34,7 @@ module.exports = () => {
                      // Creating a new user and return
                      h.createNewUser(profile)
                          .then(newChatUser => done(null, newChatUser))
-                         .catch(error => console.log('Error when creating a new user'))
+                         .catch(error => logger.log('error', 'Error when creating new user: ' + error));
                  }
         });
     }
