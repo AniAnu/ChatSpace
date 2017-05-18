@@ -3,21 +3,23 @@
     "dbURI": "mongodb://anmol-shah:abcd@ds143081.mlab.com:43081/mychatspacedb",
     "sessionSecret": "chatcantalk",
     "fb": {
-        "clientID": "1962594744026828",
-        "clientSecret": "8a2918c5dbce38f54c511471f942e7d2",
+        "clientID": "Your Facebook Client Id",
+        "clientSecret": "Your Facebook Client Secret",
         "callbackURL": "//localhost:3000/auth/facebook/callback",
         "profileFields": ["id", "displayName", "photos"]
     },
     "twitter": {
-        "consumerKey": "Yhj0FnfxwJgzgV6kSFQWfgjPy",
-        "consumerSecret": "cZbAjUzbAJJGrSjeL4hxihFxeMsm6B1ScoSvt4NhV5a02cGLgc",
+        "consumerKey": "Your Twitter Consumer Key",
+        "consumerSecret": "Your Twitter Consumer Secret",
         "callbackURL": "//localhost:3000/auth/twitter/callback",
         "profileFields": ["id", "displayName", "photos"]
     },
-
-    "redis": {
+	"redis": {
         "host": "127.0.0.1",
         "port": 6379,
         "password": ""
     }
 }
+
+
+
